@@ -4,6 +4,13 @@ def mavenHome = tool name: 'maven3.9.8'
 
 properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), pipelineTriggers([pollSCM('* * * * *')])])
 
+echo "The Build number is: ${env.BUILD_NUMBER}"
+echo "The Build id is: ${env.BUILD_ID}"
+echo "The Job name is: ${env.JOB_NAME}"
+echo "The Node name is: ${env.NODE_NAME}"
+echo "The Workspace path is: ${env.WORKSPACE}"
+echo "Jenkins default path is: ${env.JENKINS_HOME}"
+
 stage ('CheckOutCode'){
 git branch: 'development', credentialsId: '3a454b1c-6ee5-4a9a-a427-e7c942b0cd25', url: 'https://github.com/kalyankumar-banks/maven-web-application.git'
 }
