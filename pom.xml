@@ -97,13 +97,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>kalyankumar Releases Nexus Repository</name>
-	      <url>http://172.31.24.180:8099/kalyankumar/repository/Icicibabk-releases//</url>
+	      <url>http://172.31.24.180:8099/kalyankumar/repository/Icicibabk-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>kalyankumar Snapshot Nexus Repository </name>
-	      <url>http://172.31.24.180:8099/kalyankumar/repository/Icicibank-snapshot//</url>
+	      <url>http://172.31.24.180:8099/kalyankumar/repository/Icicibank-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
